@@ -54,6 +54,22 @@ The update method allows us to enter the update loop and make changes to the gam
   | Update loop                 | This is where all the methods of each object will be called and condition statements and control flow be implemented in order to make the game run smoothly. This function is from the ruby 2d gem, and it is an infinite loop that I have set to loop 10 times per second. Each time the loop is called the entire window is cleared and then redrawn depending on the conditions that control the game. | Implement conditional statements to allow particular methods of each object to be called under the right circumstances. (Priority = high) |
   | User input and game control | This is done using ruby 2d and allows the window to capture keyboard events. This function will be how to user controls the the snake, navigates through game stages and quits the program. It is here that the direction instance variable of the snake will be set when the right conditions are met. | Allow user to change direction instance variable of the snake object if they press the required key. (Priority = high)            Set a conditional statement that forbids the snake from changing direction so it would enter itself (if up cannot go down) (priority = high)                                                        Add functionality to a key (r) so the game can be restarted (priority = high)              Add functionality to a key (t) so the game can be exited (priority = high)                 Add functionality to every other key to allow the use to start playing the game.  (priority = high) |
 
+## Application Testing
+
+| Feature                                  | Test Case                                                    | Test Data                                                    | Expected Result                                              | Actual result | Status |
+| ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- | ------ |
+| TTY -Prompt.                             | Checking the the application doesnt encounter bugs when random keyboard inputs entered. | 'qwertyuioplkjhgfdsazxcvbnmb'                                | Program will continue running untill up and down keys are used to navigate prompt. |               |        |
+| TTY-Prompt.                              | Checking the username validation on entering nil username    | no username entered.                                         | message informing user that the username is required.        |               |        |
+| trump_collide method.                    | Checking whether the game reacts to the snake hitting a coin by moving the coin and increasing score. | snake run into a coin.                                       | the coin will change location, an enemy will spawn and the score will increase by 10. |               |        |
+| checking border collision functionality. | Check to see whether the snake will leave the window.        | run snake into border, and allow to rotate around the window naturally. | snake will collide with the window borders and stay within the main game window. |               |        |
+| Exit key bind                            | check to see whether the game can be exited at anytime using 't', keybind. | pressing 't' in the start menu, during the game, and at the end. | The window should be closed regardless of when the user presses 't' |               |        |
+| restart key bind                         | check to see whether the game can be restarted at any time using the 'r' keybind. | Pressing 'r' in the start menu, during the game, and the end. | The game will be restarted and the user will be taken to the start page. |               |        |
+| the hit_itself method                    | check to see whether the hit_itself method works and the game finishes when the snake collides with itself. | Run the snake into itself.                                   | The game will end and the user will be taken to the end game screen. |               |        |
+| enemy collision detection                | check to see whether the game end when the snake collides with an enemy object | run the snake into an enemy object                           | The game will end and the user wil be taken to the end game screen. |               |        |
+|                                          |                                                              |                                                              |                                                              |               |        |
+
+
+
 ## Status Update
 
 #### Wednesday 22nd 
@@ -66,6 +82,8 @@ Today I started Implementing all of what I had experimented with and built a lot
 
 #### Sunday 26th
 
-Today I added my software development plan to a readme file and pushed it to github. I also added enemies to my game, and made some changes to the initial prompt, which included creating a 'how to play' option which describes how to play the game before you enter the window. 
+Today I added my software development plan to a readme file and pushed it to github. I also added enemies to my game, and made some changes to the initial prompt, which included creating a 'how to play' option which describes how to play the game before you enter the window. I just completed writing my manual tests, ready for testing tomorrow. I also put together my presentation for Tuesday. 
+
+
 
 ####  
