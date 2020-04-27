@@ -1,9 +1,13 @@
 # This class is responsible for the coin object.
 class Coin
-  attr_reader :x, :y
+  # attr_reader :x, :y,
   def initialize
-    @x = rand(WIDTH)
-    @y = rand(HEIGHT)
+    @x = rand(1...WIDTH)
+    @y = rand(1...HEIGHT)
+  end
+
+  def coin_coordinates
+    [@x, @y]
   end
 
   def draw
@@ -16,7 +20,7 @@ class Coin
   end
 
   def change_location
-    @x = rand(WIDTH)
-    @y = rand(HEIGHT)
+    @x = rand(1...WIDTH)
+    @y = rand(1...HEIGHT)
   end
 end

@@ -32,6 +32,8 @@ update do
     end
     if coin.trump_collect?(trump.collision_x, trump.collision_y)
       coin.change_location
+      enemy.coin_spawn_allowed(coin.coin_coordinates)
+      coin.change_location unless enemy.coin_allowed
       trump.increase_size_flip
       game.score_increase
       fantastic_sample.play

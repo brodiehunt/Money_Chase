@@ -2,10 +2,11 @@
 # Contains methods to increase enemies, draw them to the window
 # and check collisions.
 class Enemy
-  attr_reader :enemy_collide, :locations
+  attr_reader :enemy_collide, :locations, :coin_allowed
   def initialize
     @locations = []
     @enemy_collide = false
+    @coin_allowed = true
   end
 
   def add_enemy
@@ -16,6 +17,16 @@ class Enemy
     @locations.each do |index|
       Square.new(x: index[0] * GRID_SIZE, y: index[1] * GRID_SIZE,
                  size: GRID_SIZE, color: 'red')
+    end
+  end
+
+  def coin_spawn_allowed(coin_coordinates)
+    @coin_allowed = true
+    @locations.each do |index|
+      if index == coin_coordinates
+        @coin_allowed = false
+        break
+      end
     end
   end
 
