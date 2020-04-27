@@ -12,7 +12,7 @@ fantastic_sample = Sound.new('./../media/fantastic.wav')
 dream_dead_sample = Sound.new('./../media/dream_dead.wav')
 song.play
 $n = false
-update do 
+update do
   clear
   game.draw
   close if game.game_stage == 'quit'
@@ -39,21 +39,21 @@ update do
     end
   end
 end
-      
+
 on :key_down do |event|
   case event.key
   when 'd'
-    game.game_stage= 'play'
-    trump.direction=(event.key) unless trump.direction == 'a'
+    game.game_stage = 'play'
+    trump.direction = event.key unless trump.direction == 'a'
   when 'a'
-    game.game_stage= 'play'
-    trump.direction=(event.key) unless trump.direction == 'd'
+    game.game_stage = 'play'
+    trump.direction = event.key unless trump.direction == 'd'
   when 'w'
-    game.game_stage= 'play'
-    trump.direction=(event.key) unless trump.direction == 's'
+    game.game_stage = 'play'
+    trump.direction = event.key unless trump.direction == 's'
   when 's'
-    game.game_stage= 'play'
-    trump.direction=(event.key) unless trump.direction == 'w'
+    game.game_stage = 'play'
+    trump.direction = event.key unless trump.direction == 'w'
   when 'r'
     trump = Trump.new
     coin = Coin.new
@@ -61,14 +61,12 @@ on :key_down do |event|
     enemy = Enemy.new
     song.play
   when 'p'
-    game.game_stage= 'play'
+    game.game_stage = 'play'
   when 't'
-    game.game_stage= 'quit'
-  else 
-    game.game_stage= 'rescue'
+    game.game_stage = 'quit'
+  else
+    game.game_stage = 'rescue'
   end
 end
 show
-$n = true if game.game_stage == 'quite'
-
-  
+$n = true if game.game_stage == 'quit'
