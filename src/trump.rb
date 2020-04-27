@@ -1,5 +1,6 @@
 # This class is responsible for snakes function, movement, interaction.
 class Trump
+  attr_reader :increase_size
   def initialize
     @direction = 'd'
     @location = [[0, 10], [1, 10], [2, 10]]
@@ -71,7 +72,7 @@ class Trump
     @direction
   end
 
-  def increase_size
+  def increase_size_flip
     @increase_size = true
   end
 

@@ -2,7 +2,7 @@
 # Contains methods to increase enemies, draw them to the window
 # and check collisions.
 class Enemy
-  attr_reader :enemy_collide
+  attr_reader :enemy_collide, :locations
   def initialize
     @locations = []
     @enemy_collide = false

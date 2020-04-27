@@ -31,7 +31,7 @@ update do
     end
     if coin.trump_collect?(trump.collision_x, trump.collision_y)
       coin.change_location
-      trump.increase_size
+      trump.increase_size_flip
       game.score_increase
       fantastic_sample.play
       enemy.add_enemy

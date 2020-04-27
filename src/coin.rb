@@ -1,5 +1,6 @@
 # This class is responsible for the coin object.
 class Coin
+  attr_reader :x, :y
   def initialize
     @x = rand(WIDTH)
     @y = rand(HEIGHT)
