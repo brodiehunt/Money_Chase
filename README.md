@@ -108,6 +108,8 @@ Today I added my software development plan to a readme file and pushed it to git
 
 #### Monday 27th
 
+Today was all about putting the smaller peices of my app together, and meeting specific assignment criteria. I created a gem file, made an executable file which will install all the dependencies for the app and then run the it when completed. I polished a few flaws in the game. I integrated comand line arguments. I'm quite happy with my project.
+
 
 
 
