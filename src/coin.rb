@@ -2,8 +2,8 @@
 class Coin
   # attr_reader :x, :y,
   def initialize
-    @x = rand(1...WIDTH)
-    @y = rand(1...HEIGHT)
+    @x = rand(1...WIDTH - 1)
+    @y = rand(1...HEIGHT - 1)
   end
 
   def coin_coordinates
@@ -20,7 +20,7 @@ class Coin
   end
 
   def change_location
-    @x = rand(1...WIDTH)
-    @y = rand(1...HEIGHT)
+    @x = rand(1...WIDTH - 1)
+    @y = rand(1...HEIGHT - 1)
   end
 end

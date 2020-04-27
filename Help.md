@@ -9,6 +9,8 @@
 5. This should install dependencies and begin the game. 
 6. If you would like to install the dependencies manually, check out the gem file in the src folder. 
 
+Note: You will have to be on a Mac OS to access this game. 
+
 ### Features
 
 This application features:
