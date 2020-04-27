@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Installing required gems'
 
-bundle Install
+bundle install
 
 ruby main.rb
