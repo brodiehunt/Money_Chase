@@ -60,6 +60,12 @@ The update method allows us to enter the update loop and make changes to the gam
   | Update loop                 | This is where all the methods of each object will be called and condition statements and control flow be implemented in order to make the game run smoothly. This function is from the ruby 2d gem, and it is an infinite loop that I have set to loop 10 times per second. Each time the loop is called the entire window is cleared and then redrawn depending on the conditions that control the game. | Implement conditional statements to allow particular methods of each object to be called under the right circumstances. (Priority = high) |
   | User input and game control | This is done using ruby 2d and allows the window to capture keyboard events. This function will be how to user controls the the snake, navigates through game stages and quits the program. It is here that the direction instance variable of the snake will be set when the right conditions are met. | Allow user to change direction instance variable of the snake object if they press the required key. (Priority = high)            Set a conditional statement that forbids the snake from changing direction so it would enter itself (if up cannot go down) (priority = high)                                                        Add functionality to a key (r) so the game can be restarted (priority = high)              Add functionality to a key (t) so the game can be exited (priority = high)                 Add functionality to every other key to allow the use to start playing the game.  (priority = high) |
 
+## Project Management Platform - Trello
+
+[Link To Terminal App Trello](https://trello.com/b/yE2s4mFJ/terminal-app)
+
+I used Trello to keep a record of what I needed to complete and to provide rough deadlines for when those features should be completed. 
+
 ## Application Testing
 
 | Feature                                  | Test Case                                                    | Test Data                                                    | Expected Result                                              | Actual result | Status |
