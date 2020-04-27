@@ -7,7 +7,7 @@ class Coin
   end
 
   def draw
-    Sprite.new('./../media/coin.png', clip_width: 40, time: 300, loop: true,
+    Sprite.new('./../docs/coin.png', clip_width: 40, time: 300, loop: true,
                                       x: @x * GRID_SIZE, y: @y * GRID_SIZE)
   end
 

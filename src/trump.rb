@@ -9,7 +9,7 @@ class Trump
 
   def draw
     @location.each do |index|
-      Sprite.new('./../media/trump_move.png', clip_width: 40, time: 20, loop: true,
+      Sprite.new('./../docs/trump_move.png', clip_width: 40, time: 20, loop: true,
                                               x: index[0] * GRID_SIZE, y: index[1] * GRID_SIZE)
     end
   end

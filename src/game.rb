@@ -20,7 +20,7 @@ class Game
   end
 
   def text_start
-    Image.new('./../media/trump_background.png', x: 110, y: 50,
+    Image.new('./../docs/trump_background.png', x: 110, y: 50,
                                                  width: 600, height: 400)
     Text.new("WELCOME! PRESS 'T' TO QUIT, 'R' TO RESTART", x: 50, y: 450,
                                                            size: 30, color: 'red')
@@ -40,7 +40,7 @@ class Game
   end
 
   def text_end
-    Image.new('./../media/trump_pepe.png', x: 110, y: 50, width: 600,
+    Image.new('./../docs/trump_pepe.png', x: 110, y: 50, width: 600,
                                            height: 400)
     Text.new("YOU DIED!!!! YOUR SCORE IS #{@score}", x: 80, y: 450,
                                                      color: 'red', size: 40)

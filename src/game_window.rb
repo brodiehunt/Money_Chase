@@ -7,9 +7,9 @@ game = Game.new
 trump = Trump.new
 coin = Coin.new
 enemy = Enemy.new
-song = Music.new('./../media/supermario.mp3')
-fantastic_sample = Sound.new('./../media/fantastic.wav')
-dream_dead_sample = Sound.new('./../media/dream_dead.wav')
+song = Music.new('./../docs/supermario.mp3')
+fantastic_sample = Sound.new('./../docs/fantastic.wav')
+dream_dead_sample = Sound.new('./../docs/dream_dead.wav')
 song.play
 $n = false
 update do
