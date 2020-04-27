@@ -5,9 +5,10 @@ require 'colorize'
 require_relative './game.rb'
 require_relative './coin.rb'
 require_relative './trump.rb'
-require_relative './tty-prompt.rb'
+require_relative './prompt.rb'
 require_relative './enemy.rb'
 prompt = Display.new
+$n = false
 loop do 
   system 'clear'
   puts '
@@ -35,8 +36,8 @@ the game when you enter the window. Press 't' to quit at any time, or 'r' to res
   elsif prompt.menu_input(menu) == 'Quit'
     break
   elsif prompt.menu_input(menu) == 'Play'
-    require_relative './gamewindow.rb'
-    break if game.game_stage == 'quit'
+    require_relative './game_window.rb'
+    break if $n == true
   end
 end
 

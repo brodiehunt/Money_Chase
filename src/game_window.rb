@@ -11,6 +11,7 @@ song = Music.new('./../media/supermario.mp3')
 fantastic_sample = Sound.new('./../media/fantastic.wav')
 dream_dead_sample = Sound.new('./../media/dream_dead.wav')
 song.play
+$n = false
 update do 
   clear
   game.draw
@@ -68,5 +69,6 @@ on :key_down do |event|
   end
 end
 show
+$n = true if game.game_stage == 'quite'
 
   
