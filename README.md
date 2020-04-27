@@ -66,6 +66,10 @@ The update method allows us to enter the update loop and make changes to the gam
 
 I used Trello to keep a record of what I needed to complete and to provide rough deadlines for when those features should be completed. 
 
+![Initial Trello Board Screen capture](https://github.com/brodiehunt/Money_Chase/blob/master/docs/initialtrello.png)
+
+![Trello In Use](https://github.com/brodiehunt/Money_Chase/blob/master/docs/trello1.png)
+
 ## Application Testing
 
 | Feature                                  | Test Case                                                    | Test Data                                                    | Expected Result                                              | Actual result | Status |
