@@ -1,5 +1,11 @@
 # README
 
+## Quick links
+
+[Trello board](https://trello.com/b/yE2s4mFJ/terminal-app)
+
+[Github Repository](https://github.com/brodiehunt/Money_Chase)
+
 ## Purpose of Money Chase(snake)
 
 The purpose of the terminal application Money Chase is to bring a fun and amusing twist to the original game 'snake'. When the application is run in the terminal, the user will be greeted with a menu and prompted to create either a random or customised username. When a username has been created, the user will then be allowed to start the game. When the user opens the game window, they will be greeted with a welcome page which will inform them how to interact with the game. This will include instructions on how to move the snake, start the game, restart the game, or quit at any time. When the user is ready, they can begin playing by following the instructions of the application. Once the user has indicated they are ready to play, the game will begin, and they will have access to control the snake with the keybinds outlined. When the user dies, they will be told their score and given instruction to either quit the application or restart the game. The objective of the game is simple. Collect as many coins as possible before running into yourself or an enemy. The more coins collected, the higher your score will be. Every time you collect a coin, you will grow and hence the mission becomes harder. The higher your score, the more enemy objects you have to avoid to continue your collection of coins. Due to the simple objective and minimal user controls, 'wsad', yet increasing complexity as you progress, the game Money Chase aims to target a wide demographic of people looking for a fun and entertaining gaming experience. It solves the problem of isolation boredom in a stimulating and strangely addicting way. 
